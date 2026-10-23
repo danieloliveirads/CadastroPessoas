@@ -8,9 +8,14 @@ namespace CadastroPessoas
 {
     internal class Pessoa
     {
-        public string Nome;
+          public string Nome;
         public int Idade;
 
+        public Pessoa(string nome, int idade)
+        {
+            Nome = nome;
+            Idade = idade;
+        }
         public void Apresentar()
         {
             Console.WriteLine("Nome: " + Nome);
